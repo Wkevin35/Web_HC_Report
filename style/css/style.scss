@@ -1,4 +1,4 @@
-$a_hover_color: Indianred;
+$a_hover_color: rgb(209, 82, 82);
 $nav_bg_color: rgba(255, 255, 255, 0.5);
 *{
     padding: 0;
@@ -20,6 +20,14 @@ nav {
     top: 0;
     background-color: $nav_bg_color;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    #guid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        align-items: center;
+    }
 }
 #banner {
     display: grid;
@@ -42,4 +50,46 @@ nav {
         height: 100%;
     }
     
+}
+
+#order {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    #choose {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        align-items: center;
+        .item {
+            cursor: pointer;
+            text-align: center;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            span {
+                font-size: 20px;
+            }
+            &:hover {
+                color: $a_hover_color;
+            }
+        }
+    }
+}
+
+#about {
+    width: 100%;
+    height: 300px;
+    background: blue;
+}
+
+#send {
+    width: 100%;
+    height: 300px;
+    background: red;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
 }
