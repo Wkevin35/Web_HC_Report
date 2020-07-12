@@ -62,13 +62,22 @@ nav #guid {
 }
 
 #order {
+  padding: 50px;
+}
+
+#order h1 {
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+#order #order-box {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
 }
 
-#order #choose {
+#order #order-box #choose {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -79,21 +88,21 @@ nav #guid {
           align-items: center;
 }
 
-#order #choose .item {
+#order #order-box #choose .item {
   cursor: pointer;
   text-align: center;
 }
 
-#order #choose .item img {
+#order #order-box #choose .item img {
   width: 100px;
   height: 100px;
 }
 
-#order #choose .item span {
+#order #order-box #choose .item span {
   font-size: 20px;
 }
 
-#order #choose .item:hover {
+#order #order-box #choose .item:hover {
   color: #d15252;
 }
 
